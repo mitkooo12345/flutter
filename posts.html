@@ -12,14 +12,15 @@
 
 <body>
 	<div class="posts-header">
-		<h1 class="posts=page-header">Flutter</h1>
+
+		<h1 class="posts-page-header">Flutter</h1>
 		<div class="posts-search">
 			<input type="text" placeholder="Search">
 			<button class="fa fa-search"></button>
 		</div>
 	</div>
 
-	<div class="container-bg">
+	<div class="container">
 		<main class="main">
 
 			<aside class="profile">
@@ -47,7 +48,7 @@
 				<header class="posts-section-header">
 					<figure class="profile-avatar post-section-header-avatar">
 						<img class="profile-image" src="images/avatar.png" alt="Profile picture" width="35" height="35">
-						<figcaption class="profile-name" id="profile-name">User</figcaption>
+						<!-- <figcaption class="profile-name" id="profile-name">User</figcaption> -->
 					</figure>
 
 					<div class="post-section-input-container">
@@ -59,7 +60,10 @@
 					</div>
 				</header>
 
-				<div class="lds-ripple" id="loader"></div>
+				<div class="lds-ripple" id="loader">
+					<div></div>
+					<div></div>
+				</div>
 
 				<section class="posts-section" id="post-container">
 					<div class="post">
