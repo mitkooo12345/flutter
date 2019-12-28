@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Flutter</title>
+	<title>Flutter - Login</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -14,16 +14,16 @@
 
 		<form class="login-form" method="POST">
 			<h1 class="auth-title">Flutter</h1>
-			<font color="grey">
-				<h2 class="auth-subtitle">Login</h2>
-			</font>
+			<h2 class="auth-subtitle">Login</h2>
 
-			<input class="auth-input" type="text" name="email" placeholder="Email">
+			<div class="errors" id="errors"></div>
+
+			<input class="auth-input" type="email" name="email" placeholder="Email">
 			<input class="auth-input" type="password" name="password" placeholder="Password"><br>
 
-			<div>
+			<div class="auth-actions">
 				<input class="auth-button" type="submit" value="Submit">
-				<a href="http://google.com" class="auth-link">Create account</a>
+				<a href="register.html" class="auth-link" title="Create account">Create account</a>
 			</div>
 		</form>
 

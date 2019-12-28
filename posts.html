@@ -5,12 +5,97 @@
 	<meta charset="UTF-8">
 	<title>Flutter - Posts</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 <body>
+	<div class="posts-header">
+		<h1 class="posts=page-header">Flutter</h1>
+		<div class="posts-search">
+			<input type="text" placeholder="Search">
+			<button class="fa fa-search"></button>
+		</div>
+	</div>
+
+	<div class="container-bg">
+		<main class="main">
+
+			<aside class="profile">
+				<figure class="profile-avatar">
+					<img class="profile-image" src="images/avatar.png" alt="Profile picture" width="85" height="85">
+					<figcaption class="profile-name" id="profile-name">User</figcaption>
+				</figure>
+
+				<div class="profile-details">
+					<div class="profile-info">
+						<h2>Posts</h2>
+						<p id="profile-posts-count">0</p>
+					</div>
+
+					<div class="profile-info">
+						<h2>Likes</h2>
+						<p id="profile-likes-count">0</p>
+					</div>
+
+					<button class="profile-button" id="logout-button" title="Logout">Logout</button>
+				</div>
+			</aside>
+
+			<div class="posts">
+				<header class="posts-section-header">
+					<figure class="profile-avatar post-section-header-avatar">
+						<img class="profile-image" src="images/avatar.png" alt="Profile picture" width="35" height="35">
+						<figcaption class="profile-name" id="profile-name">User</figcaption>
+					</figure>
+
+					<div class="post-section-input-container">
+						<form id="new-post" method="POST">
+							<input id="new-post-text" type="text" placeholder="Say something">
+							<button class="far fa-comment-alt"></button>
+						</form>
+
+					</div>
+				</header>
+
+				<div class="lds-ripple" id="loader"></div>
+
+				<section class="posts-section" id="post-container">
+					<div class="post">
+						<figure class="profile-avatar post-section-avatar">
+							<img class="profile-image" src="images/avatar.png" alt="Profile picture" width="35"
+								height="35">
+						</figure>
+						<div class="post-content">
+							<div class="post-author">
+								<h3 class="post-author-name">User</h3>
+								<span class="post-delimiter fa fa-circle"></span>
+								<span class="post-date">4 minutes ago</span>
+							</div>
+							<p class="post-text">This is my first post.</p>
+							<div class="post-footer">
+								<div class="post-reaction">
+									<button class="far fa-thumbs-up like-btn"></button>
+									<span class="post-likes">0</span>
+								</div>
+
+								<div class="post-reaction dislike-container">
+									<button class="far fa-thumbs-down dislike-btn"></button>
+									<span class="post-dislikes">0</span>
+								</div>
+							</div>
+						</div>
+						<div class="post-close">
+							<button class="post-close fa fa-times" data-id="${data.key}"></button>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+		</main>
+	</div>
 </body>
 
 </html>
