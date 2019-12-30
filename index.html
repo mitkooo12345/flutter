@@ -7,6 +7,9 @@
 	<title>Flutter - Login</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<script src="scripts/controller.js"></script>
+
 </head>
 
 <body>
@@ -18,12 +21,12 @@
 
 			<div class="errors" id="errors"></div>
 
-			<input class="auth-input" type="email" name="email" placeholder="Email">
-			<input class="auth-input" type="password" name="password" placeholder="Password"><br>
+			<input class="auth-input" id="email" type="email" name="email" placeholder="Email">
+			<input class="auth-input" id="pass" type="password" name="password" placeholder="Password"><br>
 
 			<div class="auth-actions">
-				<input class="auth-button" type="submit" value="Submit">
-				<a href="register.html" class="auth-link" title="Create account">Create account</a>
+				<input class="auth-button" onclick="authButtonClicked(false)" type="button" value="Submit">
+				<a href="register.html" class="auth-link" title="Create  account">Create account</a>
 			</div>
 		</form>
 
